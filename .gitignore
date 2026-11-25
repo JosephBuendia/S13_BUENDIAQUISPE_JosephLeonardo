@@ -1,0 +1,12 @@
+# Dependencias
+node_modules/
+
+# Secretos: NUNCA se suben a GitHub
+.env
+.env.*
+!.env.example
+
+# Basura del sistema y logs
+*.log
+.DS_Store
+Thumbs.db
