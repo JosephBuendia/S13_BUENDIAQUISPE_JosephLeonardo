@@ -1,6 +1,6 @@
 import { pool } from '../config/db.js';
 
-const COLUMNAS = 'id, codigo_seguimiento, id_usuario, nombre_vecino, ubicacion, descripcion, estado, fecha_registro';
+const COLUMNAS = 'id, codigo_seguimiento, id_usuario, nombre_vecino, ubicacion, descripcion, estado, hay_heridos, fecha_registro';
 
 export async function crear({ codigo, idUsuario, nombreVecino, ubicacion, descripcion }) {
   const { rows } = await pool.query(
